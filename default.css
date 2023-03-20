@@ -1,0 +1,95 @@
+:root {
+  --button-blue: #2476FF;
+  --button-lightblue: #ECF2FF;
+  --button-green: #01C9A7;
+  --font-lightgray: #677788;
+  --background-darkblue: #20335B;
+  --background-lightblue: #F8FAFE;
+  --line-color: #E6E9F2;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+section {
+  margin-bottom: 75px;
+}
+
+.container {
+  width: 100%;
+  /* padding-left: 15px;
+  padding-right: 20px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+p { 
+  color: var(--font-lightgray);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: var(--button-blue);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 25px;
+}
+
+input,
+select { 
+  height: 30px;
+  padding: 5px 10px;
+}
+
+select { height: 42px; }
+
+input,
+select,
+textarea,
+.checkmark {
+  border-radius: 5px;
+  border: 1px solid var(--line-color);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 12px;
+}
+
+li,
+footer .footer-top .add-phone p,
+footer .footer-top .add-phone a {
+  font-size: 14px;
+  line-height: 30px;
+}
+li,
+footer .footer-top .add-phone p,
+footer .footer-top div i,
+footer .footer-bottom .footer-nav div {
+  color: var(--font-lightgray);
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0; bottom: -50px;}
+  100% {opacity: 1; bottom: 0;} 
+} 
+
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }  
+}
